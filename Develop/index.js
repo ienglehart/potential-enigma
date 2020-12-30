@@ -1,6 +1,6 @@
-// array of questions for user
 const inquirer = require('inquirer');
 
+// init function
 
 function init() {
     //prompts for readme info
@@ -20,13 +20,34 @@ function init() {
               }
         },
         {
-            type: 'list',
+            type: 'input',
             name: 'description',
             message: 'Provide a short description of your project.',
-            choices: 'A, B, C, D'
         },
         {
-            //just add the rest of the questions here
+            type: 'input',
+            name: 'installation',
+            message: 'Proveide intallation instructions',
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Provide usage instructions',
+        },
+        {
+            type: 'input',
+            name: 'contributing',
+            message: 'credit contributors here',
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Provide tests used here',
+        },
+        {
+            type: 'input',
+            name: 'questions',
+            message: 'Questions??????????',
         }
     ])
 
@@ -59,10 +80,6 @@ function writeToFile(fileName, data) {
       });
 }
 
-// function to initialize program
-//function init() {
-    
-//}
 
 // function call to initialize program
 init();
