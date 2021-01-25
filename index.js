@@ -75,6 +75,16 @@ Starting ReadMe Generation
                 return false;
             }
           }
+      },
+      {
+        type: 'list',
+        name: 'liscense',
+        message: 'Which liscense would you like to use?',
+        choices: [
+          "MIT liscense.",
+          "GNU GPLv3",
+          "No liscense."
+        ]
       }
     ])
 };

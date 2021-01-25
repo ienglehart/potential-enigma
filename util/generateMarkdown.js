@@ -24,9 +24,11 @@ ${data.installation}
 ## Usage:
 ${data.usage}
 
-## Credits:
+## Contributors:
 ${data.credits}
 
+## Liscense
+${data.liscense}
   `;
 }
 //sort out liscnese later
