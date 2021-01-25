@@ -8,17 +8,12 @@ const promptReadMe = readMeData => {
 Starting ReadMe Generation
 ==========================
 `);
-
-  // If there's array, create one
-  if (!readMeData) {
-    readMeData = [];
-  }
   //prompts for readme info
   return inquirer
     .prompt([
       {
         type: 'input',
-        name: 'name',
+        name: 'title',
         message: 'What is the name of your project?',
           validate: name => {
             if (name) {
@@ -82,13 +77,6 @@ Starting ReadMe Generation
           }
       }
     ])
-
-    //save given data to a json document
-    //FIGURE THIS OUT!!
-    .then(readMeData => {
-      readMeData.push(readMeData);
-      return readMeData;
-    });  
 };
 
 // function call to initialize program
